@@ -1,52 +1,6 @@
 # Raspberry-Pi-4B-Cluster-KU
 
-To compile the code make sure that source code is in the same directory as terminal
-
-Run to compile: mpicc matrix.c -o matrix (it already compiled, just run it)
-
-Run to Execute: mpirun -np 4 ./matrix_calc
-
-/////////////This must executed in the master node of the cluster////////////
-
-
------ hostnames-------
-
-172.19.4.10 master-pi
-172.19.4.11 worker-1
-172.19.4.12 worker-2
-172.19.4.13 worker-3
-
-----To connect Remotely using SSH (Terminal)---
-**** Make sure you are in the same network
-ssh raspberry-pi-4b@172.19.4.10 password = DelCeroalUno  ###This is the master node
-
--- Worker nodes----
-ssh worker-1@172.19.4.11 password= 12345678
-ssh worker-2@172.19.4.12 password= 12345678
-ssh worker-3@172.19.4.13 password= 12345678
-
-Username and passowrd to log in
-raspberry-pi-4b = DelCeroalUno
-worker-1 = 12345678
-worker-2 = 12345678
-worker-3 = 12345678
-
-
----to access the master node with some gui----
-
-- Open VS code
-
-- Download ssh remote extension
-
-- once is installed add a new ssh connection
-
-- select the right ssh config file. Usually is the first one
-
-- at the top, a pop up window will ask you for ssh connection. in this case ssh raspberry-pi-4b@172.19.4.10
-
-- Write the password: DelCeroalUno
-
-- if you follow these intructions, you are ready to go.
+This is a educational project where parallel computing is employed. in this case using matrix calculation through OpenMPI
 
 
 
